@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "811995b2-db5a-4042-a6df-dfcb9d850300",
+		"name": "assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24609468"
+	},
+	"item": [
+		{
+			"name": "add user1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Priya Sharma\",\n    \"userName\":\"priya\",\n    \"email\":\"priya@gmail.com\",\n    \"age\":22\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8076/add_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"add_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Riya Verma\",\n    \"userName\":\"riya\",\n    \"email\":\"riya@gmail.com\",\n    \"age\":23\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8076/add_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"add_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add user3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"Santhosh Sharma\",\n    \"userName\":\"santhosh\",\n    \"email\":\"santhosh@gmail.com\",\n    \"age\":45\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8076/add_user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"add_user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "debit transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromUser\":\"priya\",\n    \"toUser\":\"santhosh\",\n    \"amount\":200\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "credit transaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fromUser\":\"riya\",\n    \"toUser\":\"riya\",\n    \"amount\":300\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8076/get_user?userName=priya",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"get_user"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "priya"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8076/get_user?userName=santhosh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8076",
+					"path": [
+						"get_user"
+					],
+					"query": [
+						{
+							"key": "userName",
+							"value": "santhosh"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
